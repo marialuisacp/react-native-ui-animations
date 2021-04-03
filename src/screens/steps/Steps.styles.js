@@ -27,7 +27,7 @@ export const TitleApp = styled.Text`
 
 export const SubTitleApp = styled.Text`
   text-align: center;
-  color: ${colors.PINK};
+  color: ${colors.YELLOW};
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 40px;

@@ -47,7 +47,7 @@ const Steps = () => {
 
         <ButtonProject
           text={'Start now'}
-          textColor={colors.PURPLE}
+          textColor={colors.ORANGE}
           background={colors.WHITE}
           onPress={() => { }}
           icon={faCheck}
