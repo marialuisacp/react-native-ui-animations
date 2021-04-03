@@ -1,4 +1,3 @@
-import Login from '../screens/login/Login';
 import StepsScreen from '../screens/steps/Steps';
 import LoginScreen from '../screens/login/Login';
 
