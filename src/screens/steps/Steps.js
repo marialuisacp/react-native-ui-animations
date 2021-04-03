@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Animated } from 'react-native';
+import ButtonProject from '../../components/button/Button';
 import {
   ContentSteps, ImageBackgroundSteps,
   ImageLogo, TitleApp, SubTitleApp
@@ -39,6 +40,7 @@ const Steps = () => {
         </Animated.View>
         <TitleApp>Simple Example Notes App</TitleApp>
         <SubTitleApp>React Native UI Animations example</SubTitleApp>
+        <ButtonProject></ButtonProject>
       </ImageBackgroundSteps>
     </ContentSteps>
   );
