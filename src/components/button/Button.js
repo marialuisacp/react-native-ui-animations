@@ -8,7 +8,7 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
   const windowWidth = Dimensions.get('window').width;
   let opacityText = new Animated.Value(1);
 
-  const buttonAnimation = () => {
+  const buttonAnimation = (onPress) => {
     Animated.sequence([
       Animated.timing(opacityText, {
         toValue: 0,
@@ -19,8 +19,11 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
         toValue: 1,
         duration: 120,
         useNativeDriver: false
-      })
-    ]).start();
+      }),
+      Animated.delay(60)
+    ]).start(() => {
+      onPress();
+    });
   };
 
   const handleWidth = (event) => {
@@ -29,8 +32,7 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
   }
 
   const onClickButton = (onPress) => {
-    buttonAnimation();
-    onPress();
+    buttonAnimation(onPress);
   }
 
   return (

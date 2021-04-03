@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Animated } from 'react-native';
 import ButtonProject from '../../components/button/Button';
-import { faCheck, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import {
   ContentSteps, ImageBackgroundSteps,
@@ -11,10 +11,12 @@ import {
 import { colors, colorsLighted } from '../../assets/Colors';
 import { BG_STEPS, LOGO_INITIAL } from '../../assets/Assets';
 
-const Steps = () => {
+const Steps = ({ navigation }) => {
   useEffect(() => {
     animatedLogo();
   }, []);
+
+  let positionLogo = new Animated.ValueXY(0, 0);
 
   const animatedLogo = () => {
     Animated.sequence([
@@ -34,7 +36,9 @@ const Steps = () => {
     });
   };
 
-  let positionLogo = new Animated.ValueXY(0, 0);
+  const goToLogin = () => {
+    navigation.navigate('Login');
+  };
 
   return (
     <ContentSteps>
@@ -49,7 +53,7 @@ const Steps = () => {
           text={'Start now'}
           textColor={colors.ORANGE}
           background={colors.WHITE}
-          onPress={() => { }}
+          onPress={goToLogin}
           icon={faCheck}
           highLightColor={colorsLighted.WHITE}
         />
