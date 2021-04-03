@@ -8,37 +8,19 @@ import {
   ImageBackgroundSteps
 } from './Steps.styles';
 
+import { animatedLogo } from './Steps.animations';
 import { colors, colorsLighted } from '../../assets/Colors';
 import { BG_STEPS, LOGO_INITIAL } from '../../assets/Images';
 
 const Steps = ({ navigation }) => {
-  useEffect(() => {
-    animatedLogo();
-  }, []);
-
   let positionLogo = new Animated.ValueXY(0, 0);
-
-  const animatedLogo = () => {
-    Animated.sequence([
-      Animated.delay(1000),
-      Animated.timing(positionLogo, {
-        toValue: { x: 0, y: 10 },
-        duration: 1000,
-        useNativeDriver: false
-      }),
-      Animated.timing(positionLogo, {
-        toValue: { x: 0, y: 0 },
-        duration: 1000,
-        useNativeDriver: false
-      })
-    ]).start(() => {
-      animatedLogo()
-    });
-  };
-
   const goToLogin = () => {
     navigation.navigate('Login');
   };
+
+  useEffect(() => {
+    animatedLogo(positionLogo);
+  }, []);
 
   return (
     <ContentSteps>
