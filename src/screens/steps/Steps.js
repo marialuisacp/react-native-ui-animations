@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Animated } from 'react-native';
+import { Animated, Dimensions } from 'react-native';
 import ButtonProject from '../../components/button/Button';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -56,6 +56,7 @@ const Steps = ({ navigation }) => {
           onPress={goToLogin}
           icon={faCheck}
           highLightColor={colorsLighted.WHITE}
+          widthCustom={Dimensions.get('window').width * .6}
         />
       </ImageBackgroundSteps>
     </ContentSteps>

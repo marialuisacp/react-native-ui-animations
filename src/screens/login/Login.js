@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, TextInput, TouchableWithoutFeedback, View } from 'react-native';
+import { SafeAreaView, TouchableWithoutFeedback } from 'react-native';
 
 import ButtonProject from '../../components/button/Button';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -7,11 +7,14 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import InputText from '../../components/inputText/InputText';
 import TitlePage from '../../components/titlePage/TitlePage';
 
-import { BG_LOGIN } from '../../assets/Images';
+import { BG_LOGIN, IMAGE_LIGHT_BULB } from '../../assets/Images';
 import { ImageBackground } from '../../assets/Styles';
 import { colors, colorsLighted } from '../../assets/Colors';
 
-import { TextBox, CustomText, Link } from './Login.styles';
+import {
+  TextBox, CustomText, Link, InputBox,
+  ImageLogin
+} from './Login.styles';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -23,7 +26,6 @@ const Login = () => {
         <TitlePage
           text={'Sign up'}
         />
-
         <TextBox>
           <CustomText> Or </CustomText>
           <TouchableWithoutFeedback>
@@ -31,24 +33,31 @@ const Login = () => {
           </TouchableWithoutFeedback>
         </TextBox>
 
-        <InputText
-          onChange={setEmail}
-          value={email}
-          placeholder={'E-mail'}
-          type={'email-address'}
-          borderColor={colors.BLUE}
-          textColor={colors.BROWN}
-        />
+        <InputBox>
+          <InputText
+            onChange={setEmail}
+            value={email}
+            placeholder={'E-mail'}
+            type={'email-address'}
+            borderColor={colors.BLUE}
+            textColor={colors.BROWN}
+          />
+          <InputText
+            onChange={setPassword}
+            value={password}
+            secureTextEntry={true}
+            placeholder={'Password'}
+            type={'default'}
+            borderColor={colors.BLUE}
+            textColor={colors.BROWN}
+          />
+        </InputBox>
 
-        <InputText
-          onChange={setPassword}
-          value={password}
-          secureTextEntry={true}
-          placeholder={'Password'}
-          type={'default'}
-          borderColor={colors.BLUE}
-          textColor={colors.BROWN}
-        />
+        <TextBox>
+          <TouchableWithoutFeedback>
+            <CustomText> Forgot password? </CustomText>
+          </TouchableWithoutFeedback>
+        </TextBox>
 
         <ButtonProject
           text={'Start now'}
@@ -58,6 +67,8 @@ const Login = () => {
           icon={faCheck}
           highLightColor={colorsLighted.ORANGE}
         />
+
+        <ImageLogin source={IMAGE_LIGHT_BULB} />
       </ImageBackground>
     </SafeAreaView>
   );
