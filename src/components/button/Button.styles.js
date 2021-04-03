@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 export const CustomButton = styled.TouchableHighlight`
   background: ${(props) => props.color};
-  padding: 16px;
+  padding: 16px 22px;
   display: flex;
-  width: 50%;
+  height: 52px;
   justify-content: space-around;
   flex-direction: row;
   margin: 24px;
