@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
-export const CustomButton = styled.TouchableOpacity`
+export const CustomButton = styled.TouchableHighlight`
   background: ${(props) => props.color};
   padding: 16px;
   display: flex;
   width: 50%;
   justify-content: space-around;
   flex-direction: row;
-  margin: 16px;
-  border-radius: 16px;
+  margin: 24px;
+  border-radius: 32px;
   box-shadow: -2px 2px 4px rgba(0,0,0,0.24);
 `;
 

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { colors } from '../../assets/Colors';
 
+import ButtonProject from '../../components/button/Button';
+
 export const ContentSteps = styled.View`
   width: 100%;
   height: 100%;
@@ -28,11 +30,17 @@ export const SubTitleApp = styled.Text`
   color: ${colors.PINK};
   font-weight: bold;
   margin-top: 20px;
-  font-size: 14px;
+  margin-bottom: 40px;
+  font-size: 16px;
 `;
 
 export const ImageLogo = styled.Image`
   width: 320px;
   height: 320px;
   resize-mode: contain;
+`;
+
+export const StepsButton = styled(ButtonProject)`
+  margin: 84px !important;
+  display: none;
 `;

@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 import { Animated } from 'react-native';
 import ButtonProject from '../../components/button/Button';
+import { faCheck, faWrench } from '@fortawesome/free-solid-svg-icons';
+
 import {
   ContentSteps, ImageBackgroundSteps,
   ImageLogo, TitleApp, SubTitleApp
 } from './Steps.styles';
+
+import { colors, colorsLighted } from '../../assets/Colors';
 import { BG_STEPS, LOGO_INITIAL } from '../../assets/Assets';
 
 const Steps = () => {
@@ -40,7 +44,15 @@ const Steps = () => {
         </Animated.View>
         <TitleApp>Simple Example Notes App</TitleApp>
         <SubTitleApp>React Native UI Animations example</SubTitleApp>
-        <ButtonProject></ButtonProject>
+
+        <ButtonProject
+          text={'Start now'}
+          textColor={colors.PURPLE}
+          background={colors.WHITE}
+          onPress={() => { }}
+          icon={faCheck}
+          highLightColor={colorsLighted.WHITE}
+        />
       </ImageBackgroundSteps>
     </ContentSteps>
   );
