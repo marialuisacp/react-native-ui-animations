@@ -11,3 +11,8 @@ Technogies used
 * React Native
 * React Navigation
 * React Hooks
+
+UI elements:
+* Components: custom React Native components
+* Icons: react-native-fontawesome
+* Images: drew by me
