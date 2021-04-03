@@ -17,7 +17,7 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
       }),
       Animated.timing(animatedWidth, {
         toValue: 1,
-        duration: 200,
+        duration: 120,
         useNativeDriver: false
       })
     ]).start();

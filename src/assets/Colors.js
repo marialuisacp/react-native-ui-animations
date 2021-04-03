@@ -1,6 +1,6 @@
 export const colors = {
   PINK: '#EF8EAC',
-  ORANGE: '#E3724B',
+  ORANGE: '#e3724b',
   ORANGE2: '#E3724B',
   BLUE: '#6197B5',
   GREEN: '#A9D16F',

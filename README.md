@@ -12,7 +12,15 @@ Technogies used
 * React Navigation
 * React Hooks
 
-UI elements:
+Resources used in UI elements:
 * Components: custom React Native components
 * Icons: react-native-fontawesome
 * Images: drew by me
+
+---
+## Animations
+
+* Buttons:
+
+![Image of button animation](./docs/button_white_animation.gif)
+![Image of button animation](./docs/button_animation.gif)
