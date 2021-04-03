@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../assets/Colors';
 
 import ButtonProject from '../../components/button/Button';
+import { ImageBackground } from '../../assets/Styles';
 
 export const ContentSteps = styled.View`
   width: 100%;
@@ -9,11 +10,7 @@ export const ContentSteps = styled.View`
   background: #f00;
 `;
 
-export const ImageBackgroundSteps = styled.ImageBackground`
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  background: #f0f;
+export const ImageBackgroundSteps = styled(ImageBackground)`
   align-items: center;
 `;
 

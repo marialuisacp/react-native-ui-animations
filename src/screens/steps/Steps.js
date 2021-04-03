@@ -4,12 +4,12 @@ import ButtonProject from '../../components/button/Button';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import {
-  ContentSteps, ImageBackgroundSteps,
-  ImageLogo, TitleApp, SubTitleApp
+  ContentSteps, ImageLogo, TitleApp, SubTitleApp,
+  ImageBackgroundSteps
 } from './Steps.styles';
 
 import { colors, colorsLighted } from '../../assets/Colors';
-import { BG_STEPS, LOGO_INITIAL } from '../../assets/Assets';
+import { BG_STEPS, LOGO_INITIAL } from '../../assets/Images';
 
 const Steps = ({ navigation }) => {
   useEffect(() => {
