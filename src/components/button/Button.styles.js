@@ -10,7 +10,7 @@ export const CustomButton = styled.TouchableHighlight`
   flex-direction: row;
   margin: 24px;
   border-radius: 32px;
-  box-shadow: -2px 2px 4px rgba(0,0,0,0.24);
+  box-shadow: -2px 8px 8px rgba(216, 110, 75 , 0.44);
 `;
 
 export const TextButtton = styled.Text`
