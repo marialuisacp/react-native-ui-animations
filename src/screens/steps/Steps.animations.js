@@ -18,3 +18,15 @@ export const animatedLogo = (positionLogo) => {
   });
 };
 
+const transitionElementPage = (element) =>
+  Animated.timing(element, {
+    toValue: { x: -400, y: 0 }, duration: 100, useNativeDriver: false
+  });
+
+export const transitionPage = (elementsPage, callback) => {
+  const sequence = [];
+  elementsPage.map((item) => sequence.push(transitionElementPage(item)));
+  Animated.sequence(sequence).start(() => {
+    callback();
+  });
+};
