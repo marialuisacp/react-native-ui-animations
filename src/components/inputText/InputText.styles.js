@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CustomInput = styled.TextInput`
   height: 40px;
-  margin: 12px;
+  margin: 12px 0;
   border: solid 2px ${(props) => props.borderColor};
   color: ${(props) => props.textColor};
   padding: 4px 24px;

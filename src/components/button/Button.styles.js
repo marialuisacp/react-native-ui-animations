@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 export const CustomButton = styled.TouchableHighlight`
-  background: ${(props) => props.color};
-  padding: 16px 22px;
+  background: ${(props) => props.color || '#ddd'};
+  padding: 16px 26px;
   display: flex;
   height: 52px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
-  margin: 24px;
+  margin: 24px 0;
   border-radius: 32px;
   box-shadow: -2px 8px 8px rgba(216, 110, 75 , 0.44);
 `;
@@ -21,5 +21,5 @@ export const TextButtton = styled.Text`
 
 export const IconButton = styled(FontAwesomeIcon)`
   color: ${(props) => props.color};
-  margin-left: 8px;
+  margin-left: -8px;
 `;

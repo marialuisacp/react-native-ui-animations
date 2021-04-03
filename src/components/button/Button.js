@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { Animated, Dimensions } from 'react-native';
 import { CustomButton, TextButtton, IconButton } from './Button.styles';
 
-const ButtonProject = ({ onPress, background, text, textColor, icon, highLightColor }) => {
+const ButtonProject = ({ onPress, background, text, textColor, icon, highLightColor, widthCustom }) => {
   const [dynamicwidth, setDynamicWidth] = useState(100);
   const [animatedWidth, setAnimatedWidth] = useState(new Animated.Value(0))
   const windowWidth = Dimensions.get('window').width;
@@ -35,11 +35,14 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
     buttonAnimation(onPress);
   }
 
+  const paddingPage = 64;
+  const widthButton = widthCustom || (windowWidth - paddingPage);
+  const widthAfterAnimation = 52;
   return (
     <Animated.View style={{
       width: animatedWidth.interpolate({
         inputRange: [0, 1],
-        outputRange: [windowWidth * .6, 100]
+        outputRange: [widthButton, widthAfterAnimation]
       })
     }}>
       <CustomButton
@@ -47,7 +50,7 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
         onPress={() => onClickButton(onPress)}
         color={background}
         activeOpacity={0.999}
-        underlayColor={highLightColor || '#ddd'}>
+        underlayColor={highLightColor}>
         <Fragment>
           <Animated.View style={{ opacity: opacityText }}>
             <TextButtton color={textColor}> {text} </TextButtton>
