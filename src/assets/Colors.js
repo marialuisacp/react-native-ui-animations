@@ -31,4 +31,13 @@ export const colorsLighted = {
   WHITE: '#FFFFFF'
 };
 
+export const colorsTransparent = {
+  PINK: 'rgba(424, 161, 186, .64)',
+  ORANGE: 'rgba(227, 136, 105, .64)',
+  ORANGE2: 'rgba(227, 136, 105, .64)',
+  BLUE: 'rgba(124, 169, 193, .64)',
+  GREEN: 'rgba(184, 217, 135, .64)',
+  YELLOW: 'rgba(255, 213, 128, .64)',
+};
+
 export const noteColors = ['PINK', 'ORANGE2', 'BLUE', 'GREEN', 'YELLOW'];

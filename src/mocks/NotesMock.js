@@ -1,11 +1,11 @@
 export const notes = [
   {
     id: 1,
-    text: 'Lorem ipsum is dolor sit'
+    text: 'Lorem ipsum is dolor sit. Duis tristique, metus id laoreet tempus, ex turpis rutrum nisl, eget ullamcorper purus elit sit amet orci.'
   },
   {
     id: 2,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id orci commodo erat fermentum feugiat a consequat est. Duis tristique, metus id laoreet tempus, ex turpis rutrum nisl, eget ullamcorper purus elit sit amet orci.'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id orci commodo erat fermentum feugiat a consequat est. '
   },
   {
     id: 3,
@@ -13,7 +13,7 @@ export const notes = [
   },
   {
     id: 4,
-    text: 'Aliquam ut nisi non arcu consectetur vestibulum eu eget orci. Suspendisse consequat nisl vitae lorem ornare, quis malesuada diam aliquam. '
+    text: 'Aliquam ut nisi non arcu consectetur vestibulum eu eget orci. Suspendisse nisl vitae lorem ornare, quis  diam aliquam.'
   },
   {
     id: 5,
@@ -21,7 +21,7 @@ export const notes = [
   },
   {
     id: 6,
-    text: 'Suspendisse turpis magna, hendrerit et porta vel, malesuada in urna. Aliquam mattis, nisl id pulvinar mollis, metus turpis accumsan urna, quis imperdiet velit leo ac nibh. Suspendisse euismod nibh vel magna finibus sagittis. Nulla facilisi.'
+    text: 'Suspendisse turpis magna, hendrerit et porta vel, malesuada in urna. Aliquam mattis, nisl id pulvinar mollis, metus turpis accumsan urna, quis imperdiet velit leo ac nibh. '
   },
   {
     id: 7,
@@ -33,7 +33,7 @@ export const notes = [
   },
   {
     id: 9,
-    text: 'Curabitur dapibus nunc et turpis suscipit laoreet. Nulla facilisi.'
+    text: 'Curabitur dapibus nunc et turpis suscipit laoreet. Nulla facilisi. Suspendisse euismod nibh vel magna finibus sagittis. Nulla facilisi.'
   },
   {
     id: 10,
@@ -41,11 +41,11 @@ export const notes = [
   },
   {
     id: 11,
-    text: 'Aliquam sollicitudin pellentesque augue in tempor. '
+    text: 'Curabitur lobortis, urna sed aliquet placerat, mauris nunc elementum nisi, sed varius justo metus in tortor.'
   },
   {
     id: 12,
-    text: 'Duis feugiat, quam in congue maximus, enim velit convallis leo, vel maximus quam eros et turpis. Curabitur lobortis, urna sed aliquet placerat, mauris nunc elementum nisi, sed varius justo metus in tortor.'
+    text: 'Duis feugiat, quam in congue maximus, enim velit convallis leo, vel maximus quam eros et turpis. '
   },
   {
     id: 13,

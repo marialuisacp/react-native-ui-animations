@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { SafeAreaView, FlatList, Animated } from 'react-native';
+import React, { useEffect } from 'react';
+import { SafeAreaView, Animated } from 'react-native';
 import { BG_HOME } from '../../assets/Images';
 import { ImageBackground } from '../../assets/Styles';
 
 import { notes } from '../../mocks/NotesMock';
 import Note from '../../components/note/Note';
-import { Grid } from './Notes.styles';
+import { Grid, CustomFlatList } from './Notes.styles';
 import { startPage } from './Notes.animations';
 
 const Notes = () => {
@@ -24,11 +24,12 @@ const Notes = () => {
     <SafeAreaView>
       <ImageBackground source={BG_HOME}>
         <Grid>
-          <FlatList
+          <CustomFlatList
             data={notes}
             numColumns={2}
             renderItem={({ item, index }) =>
               <Note
+                id={index}
                 opacity={notesElements[index].opacity}
                 position={notesElements[index].position}
                 text={item.text} />

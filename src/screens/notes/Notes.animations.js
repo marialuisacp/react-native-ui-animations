@@ -2,7 +2,7 @@ import { Animated } from 'react-native';
 
 const animationElementNoteOpacity = (element) =>
   Animated.timing(element.opacity, {
-    toValue: 1, duration: 500, useNativeDriver: false
+    toValue: 1, duration: 400, useNativeDriver: false
   });
 
 const animationElementNotePosition = (element) =>
@@ -11,7 +11,7 @@ const animationElementNotePosition = (element) =>
     duration: 400, useNativeDriver: false
   });
 
-const loadingNote = (element) => Animated.sequence([
+const loadingNote = (element) => Animated.parallel([
   animationElementNoteOpacity(element),
   animationElementNotePosition(element)
 ]);
