@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SafeAreaView, TouchableWithoutFeedback, Animated, Text } from 'react-native';
+import { SafeAreaView, Animated } from 'react-native';
 import ButtonProject from '../../components/button/Button';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,11 +29,6 @@ const Login = () => {
   useEffect(() => {
     startPage(animatedElements);
   }, []);
-
-  const test = {
-    opacity: new Animated.Value(0),
-    position: new Animated.ValueXY(0, 0)
-  };
 
   return (
     <SafeAreaView>
