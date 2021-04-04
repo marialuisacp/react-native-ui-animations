@@ -7,7 +7,7 @@ export const colors = {
   YELLOW: '#FFCC66',
   BROWN: '#534741',
   WHITE: '#F3F1F6'
-}
+};
 
 export const colorsDarkened = {
   PINK: '#D8839C',
@@ -31,3 +31,4 @@ export const colorsLighted = {
   WHITE: '#FFFFFF'
 };
 
+export const noteColors = ['PINK', 'ORANGE2', 'BLUE', 'GREEN', 'YELLOW'];

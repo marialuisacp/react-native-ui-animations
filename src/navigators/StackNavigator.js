@@ -42,6 +42,5 @@ export const StackNavigator = ({ navigation }) => {
 };
 
 const openDrawerMenu = (navigation) => {
-  console.log(navigation);
   navigation.openDrawer();
 };
