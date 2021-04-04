@@ -66,3 +66,9 @@ In other terminal, execute:
 ```
 react-native run-ios
 ```
+
+or
+
+```
+react-native run-android
+```
