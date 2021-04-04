@@ -11,7 +11,7 @@ const animationElementPosition = (element) =>
   });
 
 export const startPage = (elementsPage) => {
-  let sequence = [];
+  let sequence = [Animated.delay(1000)];
   Object.keys(elementsPage).map((item) => {
     const itemSequence = [
       animationElementOpacity(elementsPage[item]),
