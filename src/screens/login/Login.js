@@ -12,10 +12,10 @@ import { InputBox, ImageLogin } from './Login.styles';
 import { startPage } from './Login.animations';
 import TextWithLink from '../../components/textWithLink/TextWithLink';
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const goToHome = () => navigation.navigate('Notes');
   const initOpacity = () => new Animated.Value(0);
   const initPosition = () => new Animated.ValueXY(0, 0);
   const elements = ['Title', 'Subtitle', 'InputEmail', 'InputPassword', 'Text', 'Button'];
@@ -81,7 +81,7 @@ const Login = () => {
           text={'Sign in'}
           textColor={colors.WHITE}
           background={colors.ORANGE}
-          onPress={() => { }}
+          onPress={goToHome}
           icon={faCheck}
           highLightColor={colorsLighted.ORANGE}
           opacity={animatedElements.Button.opacity}
