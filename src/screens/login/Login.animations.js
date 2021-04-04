@@ -1,13 +1,23 @@
 import { Animated } from 'react-native';
 
-const transitionElementPage = (element) =>
-  Animated.timing(element, {
-    toValue: { x: 0, y: -40, opacity: 1 }, duration: 200, useNativeDriver: false
+const animationElementOpacity = (element) =>
+  Animated.timing(element.opacity, {
+    toValue: 1, duration: 180, useNativeDriver: false
+  });
+
+const animationElementPosition = (element) =>
+  Animated.timing(element.position, {
+    toValue: { y: -20, x: 0 }, duration: 180, useNativeDriver: false
   });
 
 export const startPage = (elementsPage) => {
-  const sequence = [];
-  console.log(Object.keys(elementsPage));
-  Object.keys(elementsPage).map((item) => sequence.push(transitionElementPage(elementsPage[item])));
+  let sequence = [];
+  Object.keys(elementsPage).map((item) => {
+    const itemSequence = [
+      animationElementOpacity(elementsPage[item]),
+      animationElementPosition(elementsPage[item])
+    ];
+    sequence.push(Animated.sequence(itemSequence));
+  });
   Animated.sequence(sequence).start();
 };
