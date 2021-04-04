@@ -39,7 +39,7 @@ const Login = () => {
     <SafeAreaView>
       <ImageBackground source={BG_LOGIN}>
         <TitlePage
-          text={'Sign up'}
+          text={'Sign in'}
           opacity={animatedElements.Title.opacity}
           position={animatedElements.Title.position}
         />
@@ -83,7 +83,7 @@ const Login = () => {
         />
 
         <ButtonProject
-          text={'Start now'}
+          text={'Sign in'}
           textColor={colors.WHITE}
           background={colors.ORANGE}
           onPress={() => { }}
