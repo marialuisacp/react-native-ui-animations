@@ -20,7 +20,49 @@ Resources used in UI elements:
 ---
 ## Animations
 
-* Buttons:
+* Screens and transitions:
+
+![Image of screen animation](./docs/screen1_animation.gif)
+
+* Buttons effect:
+
+![Image of button animation effect](./docs/button_login_animation.gif)
+
+* Buttons click:
 
 ![Image of button animation](./docs/button_white_animation.gif)
 ![Image of button animation](./docs/button_animation.gif)
+
+* Texts:
+
+![Image of texts animations](./docs/text1_animation.gif)
+![Image of texts animations](./docs/text2_animation.gif)
+
+* Inputs:
+
+![Image of input animation](./docs/input1_animation.gif)
+
+---
+## Running
+
+### Install dependencies
+
+First, install dependencies:
+
+```
+yarn install
+```
+
+### To run
+
+Open a terminal and execute:
+
+```
+yarn start
+```
+
+In other terminal, execute:
+
+```
+react-native run-ios
+```
