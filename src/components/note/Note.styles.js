@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { noteColors, colorsLighted } from '../../assets/Colors';
+import Note from './Note';
+import { Dimensions } from 'react-native';
 
 const getRandomColor = () => {
   const randomNumber = Math.floor(Math.random() * (noteColors.length));
@@ -15,7 +17,7 @@ export const CustomNote = styled.View`
   border-left-color: #eee;
   border-left-width: 1px;
   background-color: ${() => getRandomColor()};
-  flex-shrink: 2;
+   width: ${(Dimensions.get('window').width - 52) / 2}
 `;
 
 export const CustomText = styled.Text`

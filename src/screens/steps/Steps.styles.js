@@ -12,6 +12,7 @@ export const ContentSteps = styled.View`
 
 export const ImageBackgroundSteps = styled(ImageBackground)`
   align-items: center;
+  padding: 32px;
 `;
 
 export const TitleApp = styled.Text`

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CustomNote, CustomText } from './Note.styles';
+import { animatedElement } from '../../assets/Animations';
 
 const Note = ({ text }) => {
   return (
@@ -9,4 +10,4 @@ const Note = ({ text }) => {
   );
 };
 
-export default Note;
+export default animatedElement(Note);

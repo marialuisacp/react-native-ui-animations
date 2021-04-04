@@ -6,9 +6,8 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import InputText from '../../components/inputText/InputText';
 import TitlePage from '../../components/titlePage/TitlePage';
 import { BG_LOGIN, IMAGE_LIGHT_BULB } from '../../assets/Images';
-import { ImageBackground } from '../../assets/Styles';
 import { colors, colorsLighted } from '../../assets/Colors';
-import { InputBox, ImageLogin } from './Login.styles';
+import { InputBox, ImageLogin, ImageBackgroundLogin } from './Login.styles';
 import { startPage } from './Login.animations';
 import TextWithLink from '../../components/textWithLink/TextWithLink';
 
@@ -32,7 +31,7 @@ const Login = ({ navigation }) => {
 
   return (
     <SafeAreaView>
-      <ImageBackground source={BG_LOGIN}>
+      <ImageBackgroundLogin source={BG_LOGIN}>
         <TitlePage
           text={'Sign in'}
           opacity={animatedElements.Title.opacity}
@@ -88,7 +87,7 @@ const Login = ({ navigation }) => {
           position={animatedElements.Button.position}
         />
         <ImageLogin source={IMAGE_LIGHT_BULB} />
-      </ImageBackground>
+      </ImageBackgroundLogin>
     </SafeAreaView>
   );
 };
