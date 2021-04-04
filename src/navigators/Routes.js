@@ -8,6 +8,7 @@ export const routes = [
     component: StepsScreen,
   }, {
     name: 'Login',
-    component: LoginScreen
+    component: LoginScreen,
+    options: { headerShown: false },
   }
 ];
