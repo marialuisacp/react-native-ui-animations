@@ -23,6 +23,7 @@ Resources used in UI elements:
 * Screens and transitions:
 
 ![Image of screen animation](./docs/screen1_animation.gif)
+![Image of screen animation](./docs/screen2_animation.gif)
 
 * Buttons effect:
 
@@ -32,6 +33,10 @@ Resources used in UI elements:
 
 ![Image of button animation](./docs/button_white_animation.gif)
 ![Image of button animation](./docs/button_animation.gif)
+
+* Note Component:
+
+![Image of note animation](./docs/note1_animation.gif)
 
 * Texts:
 
