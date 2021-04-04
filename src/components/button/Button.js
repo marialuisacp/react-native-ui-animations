@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Animated, Dimensions } from 'react-native';
 import { CustomButton, TextButtton, IconButton } from './Button.styles';
+import { animatedElement } from '../../assets/Animations';
 
 const ButtonProject = ({ onPress, background, text, textColor, icon, highLightColor, widthCustom }) => {
   const [dynamicwidth, setDynamicWidth] = useState(100);
@@ -62,4 +63,4 @@ const ButtonProject = ({ onPress, background, text, textColor, icon, highLightCo
   )
 };
 
-export default ButtonProject;
+export default animatedElement(ButtonProject);

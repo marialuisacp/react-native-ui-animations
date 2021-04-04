@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { CustomInput } from './InputText.styles';
+import { animatedElement } from '../../assets/Animations';
 
 const InputText = ({ onChange, value, placeholder, type,
   borderColor, textColor, secureTextEntry = false }) => (
@@ -17,4 +18,4 @@ const InputText = ({ onChange, value, placeholder, type,
   </View>
 );
 
-export default InputText;
+export default animatedElement(InputText);

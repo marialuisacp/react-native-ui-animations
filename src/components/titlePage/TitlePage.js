@@ -1,8 +1,9 @@
 import React from 'react';
 import { Title } from './TitlePage.styles';
+import { animatedElement } from '../../assets/Animations';
 
 const TitlePage = ({ text, textColor }) => (
-  <Title> {text} </Title>
+  <Title textColor={textColor}> {text} </Title>
 );
 
-export default TitlePage;
+export default animatedElement(TitlePage);
